@@ -1,0 +1,16 @@
+// config/permissions.js
+module.exports = {
+  roles: {
+    admin: {
+      permissions: ['*']
+    },
+    technical: {
+      permissions: [
+        'permit:review',
+        'permit:approve',
+        'checklist:manage'
+      ]
+    },
+    // ... سایر نقش‌ها
+  }
+};
